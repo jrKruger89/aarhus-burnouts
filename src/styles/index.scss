@@ -43,6 +43,12 @@ p {
   font-family: $body-font;
 }
 
+.shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 0 0 2rem 0;
+}
+
 /*-------------------- Mobile styling --------------------*/
 
 /*---------- Navbar styling ----------*/
@@ -206,8 +212,6 @@ nav {
 
 .location_section img {
   width: 100%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   margin: 0 0 2rem 0;
 }
 
@@ -215,6 +219,38 @@ nav {
 
 .om_koerestolsrugby_hero {
   background-image: url(../assets/omrugby_hero.jpg);
+}
+
+.info_section_2 {
+  display: flex;
+  justify-content: center;
+  background-color: $color-blue;
+  color: $color-white;
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.section_wrapper {
+  width: 300px;
+}
+
+.rule_section {
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rulecard {
+  color: $color-white;
+  background-color: $color-black;
+  opacity: 90%;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.rule_section p {
+  width: 300px;
 }
 
 /*---------- Footer styling ----------*/

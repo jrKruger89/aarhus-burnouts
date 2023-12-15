@@ -66,6 +66,7 @@ export default function Forside() {
           til os så vi kan arrangere en prøvetræning.
         </p>
         <img
+          className="shadow"
           src={google_map_screenshot}
           alt="Google maps screenshot of Stensagerskolen"
         />
