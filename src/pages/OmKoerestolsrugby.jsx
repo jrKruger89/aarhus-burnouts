@@ -9,7 +9,7 @@ export default function OmKoerestolsrugby() {
           <h1 className="page_title">Hvad er kørestolsrugby?</h1>
         </div>
       </section>
-      <section className="info_section section_width_mobil">
+      <section className="info_section section_width">
         <p className="paragraph_sizing">
           Kørestolsrugby blev opfundet i 1977 i Canada af rygmarvsskadede
           kørestolsbrugere med nedsat håndfunktion i en sådan grad, at de ikke
@@ -30,7 +30,7 @@ export default function OmKoerestolsrugby() {
           verdensplan.
         </p>
       </section>
-      <section className="info_section_2 section_width_mobil shadow">
+      <section className="info_section_2 section_width shadow">
         <div className="section_wrapper">
           <h2 className="header_weight_400">Hvem kan spille? </h2>
           <p className="paragraph_sizing">
@@ -57,7 +57,7 @@ export default function OmKoerestolsrugby() {
           </p>
         </div>
       </section>
-      <section className="rule_section section_width_mobil">
+      <section className="rule_section section_width">
         <h2 className="header_weight_400">Kørestolsrugby regler</h2>
         <p className="paragraph_sizing">
           Der er mange regler at holde styr i kørestolsrugby. Vi forventer
@@ -97,8 +97,8 @@ export default function OmKoerestolsrugby() {
         </article>
         <article className="rulecard point shadow">
           <div className="overlay">
-            <h3 className="header_weight_400">Spillernes point</h3>
-            <p className="paragraph_sizing">
+            <h3 className="header_weight_400 left_align">Spillernes point</h3>
+            <p className="paragraph_sizing left_align">
               I kørestolsrugby tildeles hver spiller en point klassifikation fra
               0,5 point op til 3,5 point med 0,5 point intervaller.
               Klassifikationen vurderes ud fra den enkelte spillers fysiske
@@ -143,33 +143,37 @@ export default function OmKoerestolsrugby() {
         </article>
         <article className="rulecard court shadow">
           <div className="overlay">
-            <h3 className="header_weight_400">Banen</h3>
-            <p className="paragraph_sizing">
-              Banen i kørestolsrugby er 15 meter bred og 28 meter lang. Den
-              består i hovedtræk af en midterlinje og et målfelt i hver ende,
-              kaldet "key". Key området er 8 meter bredt og 1,75 meter højt og
-              den bagerste del af key området der ligger på baglinjen, er
-              målstregen. <br />
-              <br />
-              Når man forsvarer i sit eget målfelt må man kun være 3 spillere
-              inde i feltet af gangen. Kommer man til at være 4 i feltet får den
-              der kørte ind sidst 1 minut i straffeboksen eller modstanderen får
-              en straffescoring.
-              <br />
-              <br />
-              Det angribende hold må gerne have alle 4 spillere i modstanderens
-              felt men hver spiller må masimalt være der 10 sekunder af gangen.
-              Overskrider man dette mister man bolden.
-              <br />
-              <br />I kørestolsrugby scorer man ved at krydse målstregen med 2
-              af stolens 4 hjul imens man har kontrol over bolden. Stolens to
-              bagerste anti tipstøtter tæller ikke med her.
-              <br />
-              <br />
-              Ligesom i kørestolsbasket så må man ikke tage bolden med tilbage
-              på ens egen banehalvdel når den først har krydset midten.
-            </p>
-            <img src={rugby_court} alt="Rugbybane set fra oven" />
+            <div className="court_wrapper">
+              <h3 className="header_weight_400 ">Banen</h3>
+              <p className="paragraph_sizing ">
+                Banen i kørestolsrugby er 15 meter bred og 28 meter lang. Den
+                består i hovedtræk af en midterlinje og et målfelt i hver ende,
+                kaldet "key". Key området er 8 meter bredt og 1,75 meter højt og
+                den bagerste del af key området der ligger på baglinjen, er
+                målstregen. <br />
+                <br />
+                Når man forsvarer i sit eget målfelt må man kun være 3 spillere
+                inde i feltet af gangen. Kommer man til at være 4 i feltet får
+                den der kørte ind sidst 1 minut i straffeboksen eller
+                modstanderen får en straffescoring.
+                <br />
+                <br />
+                Det angribende hold må gerne have alle 4 spillere i
+                modstanderens felt men hver spiller må masimalt være der 10
+                sekunder af gangen. Overskrider man dette mister man bolden.
+                <br />
+                <br />I kørestolsrugby scorer man ved at krydse målstregen med 2
+                af stolens 4 hjul imens man har kontrol over bolden. Stolens to
+                bagerste anti tipstøtter tæller ikke med her.
+                <br />
+                <br />
+                Ligesom i kørestolsbasket så må man ikke tage bolden med tilbage
+                på ens egen banehalvdel når den først har krydset midten.
+              </p>
+            </div>
+            <div className="court_img_wrapper">
+              <img src={rugby_court} alt="Rugbybane set fra oven" />
+            </div>
           </div>
         </article>
         <article className="rulecard ball shadow">

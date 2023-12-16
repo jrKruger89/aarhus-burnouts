@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import google_map_screenshot from "../assets/map_placeholder.jpg";
+import action_shot from "../assets/forside_action_shot.jpg";
 
 export default function Forside() {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ export default function Forside() {
           </h4>
         </div>
       </section>
-      <section className="info_section section_width">
+      <section className="info_section info_section_desktop section_width">
         <div className="info_section_wrapper">
           <h2 className="header_weight_400">
             Er du til sport med fart over feltet?
@@ -63,37 +64,46 @@ export default function Forside() {
           </div>
         </div>
         <div className="section_img_wrapper">
-          <img src="" alt="" />
+          <img
+            className="
+          shadow"
+            src={action_shot}
+            alt="Kørestolsrugby kampsituation"
+          />
         </div>
       </section>
-      <section className="location_section section_width">
-        <h2 className="header_weight_400">Træning i Århus</h2>
-        <h3 className="header_weight_400">
-          Vi holder til på Stensagerskolen, Brabrand
-        </h3>
-        <img
-          className="shadow"
-          src={google_map_screenshot}
-          alt="Google maps screenshot of Stensagerskolen"
-        />
-        <p className="paragraph_sizing">
-          Vores træningstider er:
-          <br />
-          <br />
-          Mandage: 17.00 - 19.00
-          <br />
-          Onsdage: 16.30 - 19.00
-          <br />
-          <br />
-          Lyder kørestolsrugby til at være noget for dig? Så skriv eller ring
-          til os så vi kan arrangere en prøvetræning.
-        </p>
-        <button
-          className="btn_primary_orange shadow"
-          onClick={navigateToKontakt}
-        >
-          Kontakt os
-        </button>
+      <section className="location_section location_section_desktop section_width">
+        <div className="location_section_wrapper">
+          <h2 className="header_weight_400">Træning i Århus</h2>
+          <h3 className="header_weight_400">
+            Vi holder til på Stensagerskolen, Brabrand
+          </h3>
+          <p className="paragraph_sizing">
+            Vores træningstider er:
+            <br />
+            <br />
+            Mandage: 17.00 - 19.00
+            <br />
+            Onsdage: 16.30 - 19.00
+            <br />
+            <br />
+            Lyder kørestolsrugby til at være noget for dig? Så skriv eller ring
+            til os så vi kan arrangere en prøvetræning.
+          </p>
+          <button
+            className="btn_primary_orange shadow"
+            onClick={navigateToKontakt}
+          >
+            Kontakt os
+          </button>
+        </div>
+        <div className="location_img_wrapper">
+          <img
+            className="shadow"
+            src={google_map_screenshot}
+            alt="Google maps screenshot of Stensagerskolen"
+          />
+        </div>
       </section>
     </main>
   );

@@ -25,7 +25,7 @@ export default function OmBurnouts() {
           <h1 className="page_title">Hvem er Århus Burnouts?</h1>
         </div>
       </section>
-      <section className="info_section section_width_mobil">
+      <section className="info_section section_width">
         <p className="paragraph_sizing">
           Århus Burnouts, blev startet i 2008 af en gruppe af personer som
           spillede kørestolsbasket i Århus, men som savnede en sportsgren som
@@ -43,35 +43,40 @@ export default function OmBurnouts() {
           udmøntet i flere danske mesterskaber, det seneste i 2022.
         </p>
       </section>
-      <section className="location_section section_width_mobil">
-        <h3 className="header_weight_400">
-          Vi holder til på Stensagerskolen, Brabrand
-        </h3>
-        <img
-          className="shadow"
-          src={google_map_screenshot}
-          alt="Google maps screenshot of Stensagerskolen"
-        />
-        <p className="paragraph_sizing">
-          Vores træningstider er:
-          <br />
-          <br />
-          Mandage: 17.00 - 19.00
-          <br />
-          Onsdage: 16.30 - 19.00
-          <br />
-          <br />
-          Vil du gerne vide mere om os eller kørestolsrugby? Du er altid meget
-          velkommen til at kontakte os med spørgsmål.
-        </p>
-        <button
-          className="btn_primary_orange shadow"
-          onClick={navigateToKontakt}
-        >
-          Kontakt os
-        </button>
+      <section className="location_section section_width">
+        <div className="om_burnouts_wrapper">
+          <h3 className="header_weight_400">
+            Vi holder til på Stensagerskolen, Brabrand
+          </h3>
+          <p className="paragraph_sizing">
+            Vores træningstider er:
+            <br />
+            <br />
+            Mandage: 17.00 - 19.00
+            <br />
+            Onsdage: 16.30 - 19.00
+            <br />
+            <br />
+            Vil du gerne vide mere om os eller kørestolsrugby? Du er altid meget
+            velkommen til at kontakte os med spørgsmål.
+          </p>
+
+          <button
+            className="btn_primary_orange shadow"
+            onClick={navigateToKontakt}
+          >
+            Kontakt os
+          </button>
+        </div>
+        <div className="om_burnouts_img_wrapper">
+          <img
+            className="shadow"
+            src={google_map_screenshot}
+            alt="Google maps screenshot of Stensagerskolen"
+          />
+        </div>
       </section>
-      <section className="info_section_2 section_width_mobil shadow board_members">
+      <section className="info_section_2 section_width shadow board_members">
         <div className="section_wrapper">
           <h2 className="header_weight_400">Klubbens bestyrelse</h2>
           <div className="board_members_wrapper">
@@ -111,9 +116,7 @@ export default function OmBurnouts() {
               <figcaption>
                 Morten
                 <br />
-                Kjærsgård
-                <br />
-                Elmholt
+                Kjærsgård Elmholt
               </figcaption>
             </figure>
             <figure>
@@ -126,28 +129,28 @@ export default function OmBurnouts() {
               <figcaption>
                 Kaare
                 <br />
-                Momme
-                <br />
-                Nielsen
+                Momme Nielsen
               </figcaption>
             </figure>
           </div>
-          <h2 className="header_weight_400">Klubbens vedtægter</h2>
-          <p className="paragraph_sizing">
-            Klubbens vedtægter kan hentes som PDF-fil på knappen herunder:
-          </p>
-          <a
-            className="btn_primary_orange shadow"
-            href={vedtaegter}
-            download="Burnouts_vedtaegter"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Hent PDF
-          </a>
+          <div className="vedtaegt_wrapper">
+            <h2 className="header_weight_400">Klubbens vedtægter</h2>
+            <p className="paragraph_sizing">
+              Klubbens vedtægter kan hentes som PDF-fil på knappen herunder:
+            </p>
+            <a
+              className="btn_primary_orange shadow"
+              href={vedtaegter}
+              download="Burnouts_vedtaegter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Hent PDF
+            </a>
+          </div>
         </div>
       </section>
-      <section className="info_section_2 section_width_mobil players">
+      <section className="info_section_2 section_width players">
         <h2 className="header_weight_400">Klubbens spillere</h2>
         <div className="players_members_wrapper">
           <figure>

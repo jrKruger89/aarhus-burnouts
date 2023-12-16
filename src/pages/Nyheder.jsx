@@ -13,7 +13,7 @@ export default function Nyheder() {
           </h2>
         </div>
       </section>
-      <section className="news info_section section_width_mobil">
+      <section className="news info_section section_width">
         <article className="news_item shadow">
           <img
             className="news_img"
