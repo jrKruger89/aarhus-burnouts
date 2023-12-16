@@ -144,6 +144,7 @@ nav {
 .page_title {
   font-size: 2.5rem;
   padding: 0 0 0.5rem 0;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -185,7 +186,7 @@ nav {
   cursor: pointer;
 }
 
-.section_width_mobil {
+.section_width {
   width: 300px;
   margin: auto;
   padding: 2.5rem 0;
@@ -482,7 +483,7 @@ footer {
   box-shadow: 0 0 5px 0 $color-black;
 }
 
-/* Desktop styling */
+/*---------- Desktop styling ----------*/
 
 @media only screen and (min-width: 992px) {
   .active {
@@ -543,6 +544,53 @@ footer {
     height: 120px;
     position: static;
   }
+
+  /*---------- General desktop styling ----------*/
+  .section_width {
+    width: 1100px;
+  }
+
+  .btn_primary_orange {
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+  }
+
+  /*---------- Forside styling ----------*/
+
+  .page_sub_header {
+    font-size: 2rem;
+  }
+
+  .page_title {
+    font-size: 3.5rem;
+  }
+
+  .hero {
+    height: 450px;
+  }
+
+  .info_section h2 {
+    font-size: 2.5rem;
+  }
+  .info_section h3 {
+    font-size: 2rem;
+  }
+
+  .info_section p {
+    font-size: 1.3rem;
+  }
+
+  .location_section h2 {
+    font-size: 2.5rem;
+  }
+  .location_section h3 {
+    font-size: 2rem;
+  }
+  .location_section p {
+    font-size: 1.3rem;
+  }
+  /*---------- Footer styling ----------*/
 
   footer {
     display: flex;

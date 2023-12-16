@@ -22,7 +22,7 @@ export default function Forside() {
 
   return (
     <main>
-      <section className="hero forside_hero">
+      <section className="hero forside_hero shadow">
         <div className="hero_overlay">
           <h4 className="page_sub_header header_weight_400">Velkommen til</h4>
           <h1 className="page_title">Århus Burnouts</h1>
@@ -31,37 +31,42 @@ export default function Forside() {
           </h4>
         </div>
       </section>
-      <section className="info_section section_width_mobil">
-        <h2 className="header_weight_400">
-          Er du til sport med fart over feltet?
-        </h2>
-        <h3 className="header_weight_400">
-          Så er kørestolsrugby lige noget for dig!
-        </h3>
-        <p className="paragraph_sizing">
-          Århus Burnouts har været en del af dansk kørestolsrugby siden 2008. Vi
-          vægter både det sociale og det sportslige højt og vi mener at
-          kørestolsrugby først og fremmest skal være sjovt!
-          <br />
-          <br />
-          Kunne du tænke dig at lære mere om kørestolsrugby eller om os?
-        </p>
-        <div className="button_section">
-          <button
-            className="btn_primary_orange shadow"
-            onClick={navigateToOmRugby}
-          >
-            Ny i sporten?
-          </button>
-          <button
-            className="btn_primary_orange shadow"
-            onClick={navigateToOmBurnouts}
-          >
-            Hvem er vi?
-          </button>
+      <section className="info_section section_width">
+        <div className="info_section_wrapper">
+          <h2 className="header_weight_400">
+            Er du til sport med fart over feltet?
+          </h2>
+          <h3 className="header_weight_400">
+            Så er kørestolsrugby lige noget for dig!
+          </h3>
+          <p className="paragraph_sizing">
+            Århus Burnouts har været en del af dansk kørestolsrugby siden 2008.
+            Vi vægter både det sociale og det sportslige højt og vi mener at
+            kørestolsrugby først og fremmest skal være sjovt!
+            <br />
+            <br />
+            Kunne du tænke dig at lære mere om kørestolsrugby eller om os?
+          </p>
+          <div className="button_section">
+            <button
+              className="btn_primary_orange shadow"
+              onClick={navigateToOmRugby}
+            >
+              Ny i sporten?
+            </button>
+            <button
+              className="btn_primary_orange shadow"
+              onClick={navigateToOmBurnouts}
+            >
+              Hvem er vi?
+            </button>
+          </div>
+        </div>
+        <div className="section_img_wrapper">
+          <img src="" alt="" />
         </div>
       </section>
-      <section className="location_section section_width_mobil">
+      <section className="location_section section_width">
         <h2 className="header_weight_400">Træning i Århus</h2>
         <h3 className="header_weight_400">
           Vi holder til på Stensagerskolen, Brabrand
