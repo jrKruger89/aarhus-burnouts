@@ -36,7 +36,6 @@ p {
 
 .shadow {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  margin: 0 0 2rem 0;
 }
 
 /*-------------------- Mobile styling --------------------*/
@@ -151,7 +150,15 @@ nav {
   align-items: center;
   background-color: #333333;
   opacity: 90%;
-  box-shadow: 0 0 5px 0 #333333;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #333333;
+  opacity: 90%;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .btn_primary_orange {
@@ -162,7 +169,6 @@ nav {
   border: none;
   background-color: #ff7b4b;
   border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   cursor: pointer;
 }
 
@@ -197,7 +203,7 @@ nav {
 
 .location_section img {
   width: 100%;
-  margin: 0 0 2rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 /*---------- OmRugby styling ----------*/
@@ -227,14 +233,201 @@ nav {
 
 .rulecard {
   color: #f9f9f9;
-  background-color: #333333;
-  opacity: 90%;
   border-radius: 5px;
-  padding: 0.5rem;
+  background-position: center;
+  background-size: cover;
+  margin: 0 0 2rem 0;
+}
+
+.rulecard img {
+  width: 300px;
+  border-radius: 5px;
+  padding: 2rem 0;
 }
 
 .rule_section p {
   width: 300px;
+}
+
+.time {
+  background-image: url(../assets/card_time.jpg);
+}
+
+.point {
+  background-image: url(../assets/card_point.jpg);
+}
+
+.contact {
+  background-image: url(../assets/card_contact.jpg);
+}
+
+.court {
+  background-image: url(../assets/card_court.jpg);
+}
+
+.ball {
+  background-image: url(../assets/card_ball.jpg);
+}
+
+/*---------- Om Burnouts styling ----------*/
+.om_burnouts_hero {
+  background-image: url(../assets/omburnouts_hero.jpg);
+}
+
+.board_members_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.board_members h2 {
+  text-align: center;
+  padding: 2rem 0 2.5rem 0;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 2rem 0;
+}
+
+figure img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: #f9f9f9 2px solid;
+  margin: 1rem 0;
+}
+
+figcaption {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+.board_members p {
+  padding: 0 0 2rem 0;
+}
+
+.board_members a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.players {
+  background-color: #f9f9f9;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.players h2 {
+  padding: 2rem 0 2.5rem 0;
+}
+
+.players_members_wrapper {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*---------- Nyheder styling ----------*/
+.nyheder_hero {
+  background-image: url(../assets//nyheder_hero.jpg);
+}
+
+.news_item {
+  background-color: #4169e1;
+  color: #f9f9f9;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+
+.news_img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.news_wrapper {
+  padding: 1rem 1rem;
+}
+
+/*---------- Kalender styling ----------*/
+.kalender_hero {
+  background-image: url(../assets//kalender_hero.jpg);
+}
+
+.calender_item {
+  display: flex;
+  border-radius: 5px;
+  margin: 0 0 2rem 0;
+}
+
+.date {
+  background-color: #4169e1;
+  color: #f9f9f9;
+  height: 100%;
+  width: 100px;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item_info_wrapper {
+  padding: 1rem;
+}
+
+.coming_events h2 {
+  color: #333333;
+  padding: 2rem 0;
+}
+
+.done_events h2 {
+  color: #333333;
+  padding: 0 0 2rem 0;
+}
+
+.description {
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+}
+
+.link_to_event {
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: #333333;
+}
+
+/*---------- Kalender styling ----------*/
+.kontakt_hero {
+  background-image: url(../assets//kontakt_hero.jpg);
+}
+
+.contact_section h2 {
+  color: #333333;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.contact_section p {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.contact_section figure {
+  align-items: flex-start;
+}
+
+.contact_section figure a {
+  color: #333333;
 }
 
 /*---------- Footer styling ----------*/

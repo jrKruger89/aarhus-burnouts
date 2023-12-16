@@ -7,14 +7,17 @@ export default function Forside() {
 
   const navigateToOmRugby = () => {
     navigate("/OmKoerestolsrugby");
+    window.scrollTo(0, 0);
   };
 
   const navigateToOmBurnouts = () => {
     navigate("/OmBurnouts");
+    window.scrollTo(0, 0);
   };
 
   const navigateToKontakt = () => {
     navigate("/Kontakt");
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -36,14 +39,24 @@ export default function Forside() {
           Så er kørestolsrugby lige noget for dig!
         </h3>
         <p className="paragraph_sizing">
-          Århus Burnouts har været en del af dansk kørestolsrugby siden 2008 ...
-          mere tekst kommer senere!
+          Århus Burnouts har været en del af dansk kørestolsrugby siden 2008. Vi
+          vægter både det sociale og det sportslige højt og vi mener at
+          kørestolsrugby først og fremmest skal være sjovt!
+          <br />
+          <br />
+          Kunne du tænke dig at lære mere om kørestolsrugby eller om os?
         </p>
         <div className="button_section">
-          <button className="btn_primary_orange" onClick={navigateToOmRugby}>
+          <button
+            className="btn_primary_orange shadow"
+            onClick={navigateToOmRugby}
+          >
             Ny i sporten?
           </button>
-          <button className="btn_primary_orange" onClick={navigateToOmBurnouts}>
+          <button
+            className="btn_primary_orange shadow"
+            onClick={navigateToOmBurnouts}
+          >
             Hvem er vi?
           </button>
         </div>
@@ -53,6 +66,11 @@ export default function Forside() {
         <h3 className="header_weight_400">
           Vi holder til på Stensagerskolen, Brabrand
         </h3>
+        <img
+          className="shadow"
+          src={google_map_screenshot}
+          alt="Google maps screenshot of Stensagerskolen"
+        />
         <p className="paragraph_sizing">
           Vores træningstider er:
           <br />
@@ -65,12 +83,10 @@ export default function Forside() {
           Lyder kørestolsrugby til at være noget for dig? Så skriv eller ring
           til os så vi kan arrangere en prøvetræning.
         </p>
-        <img
-          className="shadow"
-          src={google_map_screenshot}
-          alt="Google maps screenshot of Stensagerskolen"
-        />
-        <button className="btn_primary_orange" onClick={navigateToKontakt}>
+        <button
+          className="btn_primary_orange shadow"
+          onClick={navigateToKontakt}
+        >
           Kontakt os
         </button>
       </section>
