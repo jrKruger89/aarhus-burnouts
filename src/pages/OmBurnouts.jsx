@@ -9,6 +9,7 @@ import kaare from "../assets/kaare_m_n.jpg";
 import sofie from "../assets/sofie_s.jpg";
 import jesper from "../assets/jesper_r_k.jpg";
 import vedtaegter from "../assets/BurnoutsVedtaegter.pdf";
+import { Helmet } from "react-helmet-async";
 
 export default function OmBurnouts() {
   const navigate = useNavigate();
@@ -20,6 +21,17 @@ export default function OmBurnouts() {
 
   return (
     <main>
+      <div>
+        <Helmet>
+          <title>
+            Hvem er er Århus Burnouts? | Læs om vores klub og spillere!
+          </title>
+          <meta
+            name="description"
+            content="Her kan du finde information om vores klub, se vores bestyrelse og hente vores vedtægter samt møde klubbens spillere."
+          ></meta>
+        </Helmet>
+      </div>
       <section className="hero om_burnouts_hero">
         <div className="hero_overlay">
           <h1 className="page_title">Hvem er Århus Burnouts?</h1>

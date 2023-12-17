@@ -1,10 +1,22 @@
 import React from "react";
 import burnouts_prag from "../assets/burnouts_prag.jpg";
 import burnouts_dm from "../assets/forside_hero.jpg";
+import { Helmet } from "react-helmet-async";
 
 export default function Nyheder() {
   return (
     <main>
+      <div>
+        <Helmet>
+          <title>
+            Nyheder fra Århus Burnouts | Læs de seneste nyheder fra klubben!
+          </title>
+          <meta
+            name="description"
+            content="Her kan du blive opdateret på de seneste nyheder fra Århus Burnouts - turneringsreferater, kampresultater & sociale arrangementer."
+          ></meta>
+        </Helmet>
+      </div>
       <section className="hero nyheder_hero">
         <div className="hero_overlay">
           <h1 className="page_title">Nyheder</h1>

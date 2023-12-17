@@ -1,10 +1,22 @@
 import React from "react";
 import thomas from "../assets/thomas_r.jpg";
 import google_map_screenshot from "../assets/map_placeholder.jpg";
+import { Helmet } from "react-helmet-async";
 
 export default function Kontakt() {
   return (
     <main>
+      <div>
+        <Helmet>
+          <title>
+            Kontakt Århus Burnouts | Se vores kontaktoplysninger her!
+          </title>
+          <meta
+            name="description"
+            content="Vil du gerne vide mere om kørestolsrugby eller om Århus Burnouts? - Tag fat i voreskotaktperson hvis du har spørgsmål eller gerne vil prøve kørestolsrugby!"
+          ></meta>
+        </Helmet>
+      </div>
       <section className="hero kontakt_hero">
         <div className="hero_overlay">
           <h1 className="page_title">Kontakt os</h1>

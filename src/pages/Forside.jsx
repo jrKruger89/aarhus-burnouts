@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import google_map_screenshot from "../assets/map_placeholder.jpg";
 import action_shot from "../assets/forside_action_shot.jpg";
+import { Helmet } from "react-helmet-async";
 
 export default function Forside() {
   const navigate = useNavigate();
@@ -23,6 +24,17 @@ export default function Forside() {
 
   return (
     <main>
+      <div>
+        <Helmet>
+          <title>
+            Århus Burnouts | En af Danmarks førende kørestolsrugby klubber!
+          </title>
+          <meta
+            name="description"
+            content="Velkommen til Århus Burnouts! | Vi er en kørestolsrugby klub lokaliseret i Århus. Kig ind og lær mere om kørestolsrugby og om os."
+          ></meta>
+        </Helmet>
+      </div>
       <section className="hero forside_hero shadow">
         <div className="hero_overlay">
           <h4 className="page_sub_header header_weight_400">Velkommen til</h4>

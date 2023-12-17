@@ -1,8 +1,20 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function Kalender() {
   return (
     <main>
+      <div>
+        <Helmet>
+          <title>
+            Kalender for Århus Burnouts | Se vores kommende aktiviteter.
+          </title>
+          <meta
+            name="description"
+            content="Følg med i hvilke begivenheder & arrangementer Århus Burnouts har i kalenderen | Hold dig opdateret på vores aktiviteter her!"
+          ></meta>
+        </Helmet>
+      </div>
       <section className="hero kalender_hero">
         <div className="hero_overlay">
           <h1 className="page_title">Kalender</h1>

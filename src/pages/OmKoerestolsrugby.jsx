@@ -1,9 +1,21 @@
 import React from "react";
 import rugby_court from "../assets/rugby_court.png";
+import { Helmet } from "react-helmet-async";
 
 export default function OmKoerestolsrugby() {
   return (
     <main>
+      <div>
+        <Helmet>
+          <title>
+            Hvad er kørestolsrugby? | Kørestolsrugby regler & information.
+          </title>
+          <meta
+            name="description"
+            content="Her finder du en oversigt over nogle af de mange regler i kørestolsrugby & generel information om kørestolsrugby."
+          ></meta>
+        </Helmet>
+      </div>
       <section className="hero om_koerestolsrugby_hero">
         <div className="hero_overlay">
           <h1 className="page_title">Hvad er kørestolsrugby?</h1>
