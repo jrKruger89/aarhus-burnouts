@@ -20,7 +20,7 @@ root.render(
       <HelmetProvider>
         <NavbarComponent />
         <Routes>
-          <Route path="/" element={<Forside />}></Route>
+          <Route path="/Forside" element={<Forside />}></Route>
           <Route
             path="/OmKoerestolsrugby"
             element={<OmKoerestolsrugby />}
