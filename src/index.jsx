@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import NavbarComponent from "./components/NavbarComponent";
 import { Route, Routes } from "react-router-dom";
 import Forside from "./pages/Forside";
@@ -16,7 +16,7 @@ import "./styles/index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <HelmetProvider>
         <NavbarComponent />
         <Routes>
@@ -32,6 +32,6 @@ root.render(
         </Routes>
         <FooterComponent />
       </HelmetProvider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
