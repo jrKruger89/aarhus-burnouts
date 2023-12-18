@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aarhus-burnouts/static/css/main.bcd4fbe7.css",
-    "main.js": "/aarhus-burnouts/static/js/main.79fb839f.js",
+    "main.js": "/aarhus-burnouts/static/js/main.b0ec455c.js",
     "static/media/nyheder_hero.jpg": "/aarhus-burnouts/static/media/nyheder_hero.9f16e612e2200afc32d8.jpg",
     "static/media/card_ball.jpg": "/aarhus-burnouts/static/media/card_ball.a0b0bf9bcbf5439a6825.jpg",
     "static/media/kontakt_hero.jpg": "/aarhus-burnouts/static/media/kontakt_hero.5934d98aafd841fb9e77.jpg",
@@ -28,10 +28,10 @@
     "static/media/logo_large.png": "/aarhus-burnouts/static/media/logo_large.ce157c23ddede004aede.png",
     "index.html": "/aarhus-burnouts/index.html",
     "main.bcd4fbe7.css.map": "/aarhus-burnouts/static/css/main.bcd4fbe7.css.map",
-    "main.79fb839f.js.map": "/aarhus-burnouts/static/js/main.79fb839f.js.map"
+    "main.b0ec455c.js.map": "/aarhus-burnouts/static/js/main.b0ec455c.js.map"
   },
   "entrypoints": [
     "static/css/main.bcd4fbe7.css",
-    "static/js/main.79fb839f.js"
+    "static/js/main.b0ec455c.js"
   ]
 }
