@@ -30,7 +30,7 @@ export default function NavbarComponent() {
           <span></span>
         </div>
 
-        <Link to="/Forside">
+        <Link to="/">
           <img
             onClick={closeMenu}
             className="logo"
