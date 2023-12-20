@@ -37,8 +37,10 @@ export default function Kontakt() {
               alt="Thomas Romerdahl kontaktperson ved spørgsmål"
             />
             <figcaption>Thomas Romerdahl</figcaption>
-            <a href="tel:+45-88-888-888">Tlf: 88 88 88 88</a>
-            <a href="mailto:someone@example.com">Mail: someone@example.com</a>
+            <a href="tel:+45-22-925-212">Tlf: 22 92 52 12</a>
+            <a href="mailto:aarhusrugby@gmail.com">
+              Mail: aarhusrugby@gmail.com
+            </a>
           </figure>
         </section>
         <section className="location_section section_width margin_reset">

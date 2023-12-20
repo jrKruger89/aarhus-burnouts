@@ -15,7 +15,7 @@ export default function FooterComponent() {
             8220 Brabrand
             <br />
             <br />
-            CVR: 88888888
+            CVR: 31530415
           </p>
         </section>
         <section className="so_me">
@@ -42,10 +42,10 @@ export default function FooterComponent() {
             >
               <i className="fa fa-map-marker" aria-hidden="true"></i>
             </a>
-            <a href="tel:+45-88-888-888">
+            <a href="tel:+45-22-925-212">
               <i className="fa fa-phone" aria-hidden="true"></i>
             </a>
-            <a href="mailto:someone@example.com">
+            <a href="mailto:aarhusrugby@gmail.com">
               <i className="fa fa-envelope" aria-hidden="true"></i>
             </a>
           </div>

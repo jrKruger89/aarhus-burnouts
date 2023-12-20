@@ -29,7 +29,6 @@ export default function NavbarComponent() {
           <span></span>
           <span></span>
         </div>
-
         <Link to="/">
           <img
             onClick={closeMenu}
@@ -38,7 +37,6 @@ export default function NavbarComponent() {
             alt="Århus Burnouts logo stor udgave"
           />
         </Link>
-
         <ul className={isMenuOpen ? "open" : ""}>
           <li>
             <NavLink to="/OmKoerestolsrugby" onClick={closeMenu}>
